@@ -4,32 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./test.css">
     <title>test</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="form">
-            <form action="submit">
-                <label class="inputTitle" for="fullName">Name</label>
-                <input class="input" name="fullName" type="text"  placeholder="Full Name">
-
-                <label class="inputTitle" for="age">Age</label>
-                <input class="input" name="age" type="number"  placeholder="Skaters Age">
-
-                <label class="inputTitle" for="sponsors">Name</label>
-                <input class="input" name="sponsors" type="text"  placeholder="">
-
-                <label class="inputTitle" for="fullName">Name</label>
-                <input class="input" name="fullName" type="text"  placeholder="Full Name">
-
-                <label class="inputTitle" for="fullName">Name</label>
-                <input class="input" name="fullName" type="text"  placeholder="Full Name">
-
-                <label class="inputTitle" for="fullName">Name</label>
-                <input class="input" name="fullName" type="text"  placeholder="Full Name">
-                
+        <div class="form-cont main-cont">
+            <h1 class="title">Add New Skater</h1>
+            <form id="skaterForm" action="submit" name="skaterForm">
+                <div class="left">
+                    <label class="inputTitle" for="fullName">Skaters Full Name</label>
+                    <input class="input" name="fullName" type="text">
+    
+                    <label class="inputTitle" for="age">Age</label>
+                    <input class="input" name="age" type="number">
+    
+                    <label class="inputTitle" for="sponsors">Sponsors</label>
+                    <input class="input" name="sponsors" type="text">
+    
+                    <label class="inputTitle" for="imgLink">Image Link</label>
+                    <input class="input" name="imgLink" type="text">
+    
+                    <label class="inputTitle" for="bio">Bio</label>
+                    <textarea class="input" name="bio" type="text"></textarea>
+                </div>
+                <div class="middle">
+                    <label class="inputTitle" for="xGames">How many X Games Gold Medals</label>
+                    <input class="input" name="xGames" type="text">
+    
+                    <label class="inputTitle" for="dTour">How many Dew Tour Gold Medals</label>
+                    <input class="input" name="dTour" type="text">
+    
+                    <label class="inputTitle" for="sls">How many Street League Gold Medals</label>
+                    <input class="input" name="sls" type="text">
+    
+                    <label class="inputTitle" for="vps">How many Vans Park Series Gold Medals</label>
+                    <input class="input" name="vps" type="text">
+                </div>
+                <div class="right">
+                    <label class="inputTitle" for="ssessions">How many Simple Session Gold Medals</label>
+                    <input class="input" name="ssessions" type="text">
+    
+                    <label class="inputTitle" for="batb">How many Battle At the Berrics wins</label>
+                    <input class="input" name="batb" type="text">
+    
+                    <label class="inputTitle" for="gOrSlides">How many Grind or Slide wins</label>
+                    <input class="input" name="gOrSlides" type="text">
+                </div> 
             </form>
+            <div class="btnContainer">
+                <button class="submit-btn" type="submit" form="skaterForm" >Submit</button>
+            </div> 
         </div>
     </div>
 </body>

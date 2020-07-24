@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+body{
+    background: #87ADEA ;
+}
+
+/* 
+colors 
+
+#6299F2 modal blue
+#87ADEA background blue
+#4673BA btn blue
+
+*/
+.title{
+    margin: 0 0 25px 0;
+    text-align: center;
+    color: white;
+}
+.container{
+    margin: 50px auto;
+    width: 80%;
+    
+}
+.form-cont{
+    background: #6299F2;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 13px #00000031;
+}
+.left, .middle, .right{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+#skaterForm{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.inputTitle{
+    color:white;
+}
+.input{
+ padding: 5px 0;
+ margin: 10px 0;
+ border-radius: 5px;
+ border: none;   
+}
+.btnContainer{
+    padding: 20px 0 0 0;
+    display: flex;
+    
+}
+.submit-btn{
+    padding: 13px 100px;
+    margin: 0 auto;
+    background:#4673BA;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 6px 6px 13px #00000031;
+}
