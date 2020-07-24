@@ -1,0 +1,39 @@
+.form-cont{
+    background: #6299F2;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 13px #00000031;
+}
+.left, .middle, .right{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+#skaterForm{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.inputTitle{
+    color:white;
+}
+.input{
+ padding: 5px 0;
+ margin: 10px 0;
+ border-radius: 5px;
+ border: none;   
+}
+.btnContainer{
+    padding: 20px 0 0 0;
+    display: flex;
+    
+}
+.submit-btn{
+    padding: 13px 100px;
+    margin: 0 auto;
+    background:#4673BA;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 6px 6px 13px #00000031;
+}
