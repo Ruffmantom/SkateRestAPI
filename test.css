@@ -91,3 +91,38 @@ border-radius:2px;
     border-radius: 7px;
     box-shadow: 6px 6px 13px #00000031;
 }
+/* skater cards */
+
+.skater-card{
+    width: 245px;
+    padding: 25px 12px ;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.img-cont{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+.skater-name{
+    padding: 10px 0;
+}
+.img-cont > img{
+    width: 100%;
+}
+.info-cont{
+    display: flex;
+    flex-direction: column;
+
+}
+.info-cont > img{
+    margin: 0 auto;
+}
+.drop-down{
+    display: none;
+}

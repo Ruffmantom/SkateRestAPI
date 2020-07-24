@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./test.css">
     <title>Document</title>
 </head>
+
 <body>
     <!-- headersection -->
     <div class="header">
@@ -17,20 +19,38 @@
         <div class="form-cont main-cont">
             <h1 class="title">2020 Top Skaters</h1>
             <div class="skater-card-section">
-               <div class="skater-card">
-                   <div class="img-cont">
-                       <img src="https://img.redbull.com/images/c_crop,x_811,y_0,h_4912,w_6549/c_fill,w_750,h_536/q_auto,f_auto/redbullcom/2017/06/26/8121058c-c14f-44c2-afd9-41dad21d7840/ryan-sheckler-hart-lines-2017-portrait" alt="{props.skater}">
-                   </div>
-                   <div class="info-cont">
-                    <h2 class="skater-name">Ryan Sheckler</h2>
-                    <div class="bio-cont">
-                        <h3>Bio</h3>
-                        <p class="bio">Ryan Allen Sheckler is an American professional skateboarder and entrepreneur, and was the star of the MTV-produced reality television series Life of Ryan. Sheckler was listed in Fox Weekly's "15 Most Influential Skateboarders of All-Time" article.</p>
+
+                <!-- skater card  -->
+                <div class="skater-card">
+                    <div class="img-cont">
+                        <img src="https://img.redbull.com/images/c_crop,x_811,y_0,h_4912,w_6549/c_fill,w_750,h_536/q_auto,f_auto/redbullcom/2017/06/26/8121058c-c14f-44c2-afd9-41dad21d7840/ryan-sheckler-hart-lines-2017-portrait"
+                            alt="{props.skater}">
+                        <h3 class="skater-name">Ryan Sheckler</h3>
                     </div>
-                   </div>
-               </div> 
+                    <div class="info-cont">
+                        <img src="./client/src/assets/images/pullDown.png" alt="">
+                        <div class="drop-down">
+                            <div class="bio-cont">
+                                <h3>Bio</h3>
+                                <p class="bio">Ryan Allen Sheckler is an American professional skateboarder and
+                                    entrepreneur, and was the star of the MTV-produced reality television series Life of
+                                    Ryan. Sheckler was listed in Fox Weekly's "15 Most Influential Skateboarders of
+                                    All-Time" article.</p>
+                            </div>
+                            <div class="stats">
+                                <p class="stat">X-Games Golds: 10</p>
+                                <p class="stat">Dew Tour Golds: 5</p>
+                                <p class="stat">Simple Sessions Golds: 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of skater card -->
+
+
             </div>
         </div>
     </div>
 </body>
+
 </html>
