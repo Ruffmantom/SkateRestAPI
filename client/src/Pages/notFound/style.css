@@ -1,0 +1,8 @@
+.error-cont{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+#error{
+    margin: auto;
+}

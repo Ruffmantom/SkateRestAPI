@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import "./style.css"
 
 export default function notFound() {
     return (
-        <div>
-            <h1 className="error">Error Page Not Found</h1>
+        <div className='container error-cont'>
+            <h1 id="error">Error: Page Not Found</h1>
         </div>
     )
 }
