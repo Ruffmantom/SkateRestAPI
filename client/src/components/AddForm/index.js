@@ -28,14 +28,18 @@ export default function AddForm(props) {
                     <input className="input" name="sls" type="text" />
                     <label className="inputTitle" htmlFor="vps">How many Vans Park Series Gold Medals</label>
                     <input className="input" name="vps" type="text" />
-                </div>
-                <div className="right">
                     <label className="inputTitle" htmlFor="ssessions">How many Simple Session Gold Medals</label>
                     <input className="input" name="ssessions" type="text" />
+                </div>
+                <div className="right">
                     <label className="inputTitle" htmlFor="batb">How many Battle At the Berrics wins</label>
                     <input className="input" name="batb" type="text" />
                     <label className="inputTitle" htmlFor="gOrSlides">How many Grind or Slide wins</label>
                     <input className="input" name="gOrSlides" type="text" />
+                    <label className="inputTitle" htmlFor="tampPro">How many Tampa Pro wins</label>
+                    <input className="input" name="tampPro" type="text" />
+                    <label className="inputTitle" htmlFor="redBull">How many Red Bull Heartline wins</label>
+                    <input className="input" name="redBull" type="text" />
                 </div>
             </form>
             <div className="btnContainer">
