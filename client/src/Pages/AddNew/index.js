@@ -1,12 +1,13 @@
 import React from 'react';
-import AddFrom from "../../Components/AddForm";
-import Container from "../../Components/Container";
+import AddForm from "../../components/AddForm";
 import "./style.css";
 
 export default function AddNew() {
     return (
-       <Container>
-           <AddFrom/>
-       </Container>
+       <div className="container">
+
+           <AddForm/>
+       </div>
+      
     )
 }

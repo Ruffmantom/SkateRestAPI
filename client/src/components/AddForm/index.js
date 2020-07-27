@@ -1,7 +1,7 @@
 import React from 'react';
 import "./style.css";
 
-export default function AddForm(props) {
+export default function AddForm(props) { 
     return (
 
         <div className="form-cont main-cont">
