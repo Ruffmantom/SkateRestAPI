@@ -14,6 +14,9 @@
     flex-direction: column;
     border-radius: 10px;
 }
+.bio{
+    font-size: 14px;
+}
 .img-cont{
     width: 200px;
     height: 200px;
@@ -33,9 +36,16 @@
     flex-direction: column;
 
 }
-.info-cont > img{
+.dropdownBtn{
     margin: 0 auto;
 }
 .drop-down{
-    display: none;
+  
+    padding-bottom: 15px;
+}
+.hThree{
+    padding: 15px 0 10px 0;
+}
+.stats{
+    padding-left: 20px;
 }

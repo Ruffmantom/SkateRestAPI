@@ -1,11 +1,13 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import "./style.css";
 
-export default function Header(props) {
+export default function Header() {
+    
     return (
         <div class="header">
-            <a href="/skaters" class="link">SKATERS</a>
-            <a href="/addnew" class="link">ADDNEW</a>
+            <NavLink to="/" exact className="link" activeClassName="active">SKATERS</NavLink>
+            <NavLink to="/addnew" className="link" activeClassName="active">ADDNEW</NavLink>
         </div>
     )
 }
