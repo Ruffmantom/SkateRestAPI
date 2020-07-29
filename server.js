@@ -3,6 +3,7 @@ const path = require("path");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
 const app = express();
+const routes = require("./routes");
 
 // forgot middleware
 app.use(express.urlencoded({ extended: true }));
@@ -17,6 +18,8 @@ if (process.env.NODE_ENV === "production") {
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
+// call the api routes
+app.use(routes);
 // Connect to the Mongo DB
 mongoose.set('useUnifiedTopology', true);
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Skater", { useNewUrlParser: true });

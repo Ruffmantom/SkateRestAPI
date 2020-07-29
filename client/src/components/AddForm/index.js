@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import "./style.css";
 import API from "../../utils/API";
 
-export default function AddForm(props) { 
+export default function AddForm(props) {
     // defining state
     const [fullName, setFullName] = useState("");
     const [age, setAge] = useState(0);
@@ -20,6 +20,39 @@ export default function AddForm(props) {
     const [redBull, setRedBull] = useState(0);
 
 
+    const newSkater = {
+        fullName: fullName,
+        age: age,
+        sponsors: sponsors,
+        imgLink: skaterImg,
+        bio: bio,
+        XG: xgames,
+        DT: dewTour,
+        SLS: sls,
+        VPS: vps,
+        SS: ss,
+        BATB: batb,
+        GOS: gOs,
+        tampa: tampa,
+        RBHL: redBull
+    }
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+        // make sure everything worked
+        console.log("form submitted!");
+        console.log(newSkater);
+        // submit to database
+        API.saveSkater(newSkater)
+            .then((res) => ({
+                result: res.data
+            }))
+            .catch(err => console.log(err));
+    }
+
+
+
+
 
     return (
 
@@ -28,41 +61,41 @@ export default function AddForm(props) {
             <form id="skaterForm" action="submit" name="skaterForm">
                 <div className="left">
                     <label className="inputTitle" htmlFor="fullName">Skaters Full Name</label>
-                    <input className="input" name="fullName" type="text" />
+                    <input className="input" onChange={e => setFullName(e.target.value)} name="fullName" type="text" />
                     <label className="inputTitle" htmlFor="age">Age</label>
-                    <input className="input" name="age" type="number" />
+                    <input className="input" onChange={e => setAge(e.target.value)} name="age" type="number" />
                     <label className="inputTitle" htmlFor="sponsors">Sponsors</label>
-                    <input className="input" name="sponsors" type="text" />
+                    <input className="input" onChange={e => setSponsors(e.target.value)} name="sponsors" type="text" />
                     <label className="inputTitle" htmlFor="imgLink">Image Link</label>
-                    <input className="input" name="imgLink" type="text" />
+                    <input className="input" onChange={e => setskaterImg(e.target.value)} name="imgLink" type="text" />
                     <label className="inputTitle" htmlFor="bio">Bio</label>
-                    <textarea className="input" name="bio" type="text" defaultValue={""} />
+                    <textarea className="input" onChange={e => setBio(e.target.value)} name="bio" type="text" />
                 </div>
                 <div className="middle">
                     <label className="inputTitle" htmlFor="xGames">How many X Games Gold Medals</label>
-                    <input className="input" name="xGames" type="text" />
+                    <input className="input" onChange={e => setXgames(e.target.value)} name="xGames" type="number" defaultValue={0} />
                     <label className="inputTitle" htmlFor="dTour">How many Dew Tour Gold Medals</label>
-                    <input className="input" name="dTour" type="text" />
+                    <input className="input" onChange={e => setDewTour(e.target.value)} name="dTour" type="number" defaultValue={0} />
                     <label className="inputTitle" htmlFor="sls">How many Street League Gold Medals</label>
-                    <input className="input" name="sls" type="text" />
+                    <input className="input" onChange={e => setSls(e.target.value)} name="sls" type="number" defaultValue={0} />
                     <label className="inputTitle" htmlFor="vps">How many Vans Park Series Gold Medals</label>
-                    <input className="input" name="vps" type="text" />
+                    <input className="input" onChange={e => setVps(e.target.value)} name="vps" type="number" defaultValue={0} />
                     <label className="inputTitle" htmlFor="ssessions">How many Simple Session Gold Medals</label>
-                    <input className="input" name="ssessions" type="text" />
+                    <input className="input" onChange={e => setSS(e.target.value)} name="ssessions" type="number" defaultValue={0} />
                 </div>
                 <div className="right">
                     <label className="inputTitle" htmlFor="batb">How many Battle At the Berrics wins</label>
-                    <input className="input" name="batb" type="text" />
+                    <input className="input" onChange={e => setBatb(e.target.value)} name="batb" type="number" defaultValue={0} />
                     <label className="inputTitle" htmlFor="gOrSlides">How many Grind or Slide wins</label>
-                    <input className="input" name="gOrSlides" type="text" />
+                    <input className="input" onChange={e => setGoS(e.target.value)} name="gOrSlides" type="number" defaultValue={0} />
                     <label className="inputTitle" htmlFor="tampPro">How many Tampa Pro wins</label>
-                    <input className="input" name="tampPro" type="text" />
+                    <input className="input" onChange={e => setTampa(e.target.value)} name="tampPro" type="number" defaultValue={0} />
                     <label className="inputTitle" htmlFor="redBull">How many Red Bull Heartline wins</label>
-                    <input className="input" name="redBull" type="text" />
+                    <input className="input" onChange={e => setRedBull(e.target.value)} name="redBull" type="number" defaultValue={0} />
                 </div>
             </form>
             <div className="btnContainer">
-                <button className="submit-btn" type="submit" form="skaterForm">Submit</button>
+                <button className="submit-btn" onClick={handleFormSubmit} type="submit" form="skaterForm">Submit</button>
             </div>
         </div>
 

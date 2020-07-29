@@ -5,10 +5,10 @@ export default {
         return axios.get('api/skaters');
     },
     getSkater: function(id){
-        return axios.get('api/skaters/' + id);
+        return axios.get('api/skater/' + id);
     },
     deleteSkater: function(id){
-        return axios.delete('api/skaters/' + id);
+        return axios.delete('api/skater/' + id);
     },
     saveSkater: function(skaterData){
         return axios.post('api/skaters', skaterData)
