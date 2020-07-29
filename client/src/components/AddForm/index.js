@@ -1,7 +1,26 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import "./style.css";
+import API from "../../utils/API";
 
 export default function AddForm(props) { 
+    // defining state
+    const [fullName, setFullName] = useState("");
+    const [age, setAge] = useState(0);
+    const [sponsors, setSponsors] = useState("");
+    const [skaterImg, setskaterImg] = useState("");
+    const [bio, setBio] = useState("");
+    const [xgames, setXgames] = useState(0);
+    const [dewTour, setDewTour] = useState(0);
+    const [sls, setSls] = useState(0);
+    const [vps, setVps] = useState(0);
+    const [ss, setSS] = useState(0);
+    const [batb, setBatb] = useState(0);
+    const [gOs, setGoS] = useState(0);
+    const [tampa, setTampa] = useState(0);
+    const [redBull, setRedBull] = useState(0);
+
+
+
     return (
 
         <div className="form-cont main-cont">
