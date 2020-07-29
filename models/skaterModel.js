@@ -18,5 +18,5 @@ const skaterSchema = new Schema({
     RBHL: { type: Number },
     date: { type: Date, default: Date.now }
 })
-const Skater = mongoose.model("Post", skaterSchema);
+const Skater = mongoose.model("Skater", skaterSchema);
 module.exports = Skater; 
